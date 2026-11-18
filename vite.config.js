@@ -5,6 +5,7 @@ import viteCompression from 'vite-plugin-compression'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
+  base: './',
   plugins: [
     vue(),
     tailwindcss(), // 1. 必须保留：激活 Tailwind v4 样式引擎
